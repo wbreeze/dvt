@@ -14,9 +14,13 @@ which will compile the native source.
 The test supports `rbenv` and the version of Ruby expected is in the
 file, `.ruby-version`.
 
+For the test to be valid, it is important that the davenport C library
+is not already installed to the operating system. The gem should compile
+and install the C library when it is itself installed.
+
 To install and run this smoke test:
 
-    git clone 
+    git clone https://github.com/wbreeze/dvt.git
     cd dvt
     bundle install
     ruby test.rb
